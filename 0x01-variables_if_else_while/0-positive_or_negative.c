@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * This function is the entry point of the program. It generates a random
+ * number and prints whether the number is positive or negative.
+ *
+ * Return: Always 0 (Success)
+ */
+
+
 int main(void)
 {
 	int n;
@@ -11,15 +21,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("The number %d is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("The number %d is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("The number %d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
