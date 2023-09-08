@@ -15,7 +15,7 @@ while (i < 10)
 {
 putchar(i + '0');    /* Print the character '0' */
 i++; /*increment i by 1*/
-putchar('\n');
 }
+putchar('\n');
 return (0);
 }
