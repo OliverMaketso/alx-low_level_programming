@@ -24,7 +24,7 @@ lastDigit = n % 10;
 if (lastDigit < 0)
 {
 lastDigit *= -1;
-n *= -1;  // Ensure that n is also negative if lastDigit is negative
+n *= -1;  /* Ensure that n is also negative if lastDigit is negative*/
 }
 
 printf("Last digit of %d is %d ", n, lastDigit);
