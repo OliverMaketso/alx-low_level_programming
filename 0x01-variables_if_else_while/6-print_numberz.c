@@ -14,7 +14,8 @@ int i = 0;
 while (i < 10)
 {
 putchar(i + '0');    /* Print the character '0' */
-i++; 
+i++; /*increment i by 1*/
+putchar('\n');
 }
 return (0);
 }
