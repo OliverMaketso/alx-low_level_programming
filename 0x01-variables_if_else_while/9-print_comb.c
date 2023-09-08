@@ -10,22 +10,22 @@
  */
 int main(void)
 {
-    int num;
+int num;
 
-    /* Print single-digit numbers separated by ", " */
-    for (num = 0; num <= 9; num++)
-    {
-        putchar(num + '0');
+/* Print single-digit numbers separated by ", " */
+for (num = 0; num <= 9; num++)
+{
+putchar(num + '0');
 
-        if (num < 9)
-        {
-            putchar(',');
-            putchar(' ');
-        }
-    }
+if (num < 9)
+{
+putchar(',');
+putchar(' ');
+}
+}
 
-    putchar('\n'); /* Print a newline character */
+putchar('\n'); /* Print a newline character */
 
-    return (0);
+return (0);
 }
 
