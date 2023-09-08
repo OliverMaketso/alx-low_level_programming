@@ -5,9 +5,9 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program generates a random number, extracts the last digit,
- *              and prints whether it's greater than 5, equal to 0, or less than 6
- *              but not 0.
+ * Description: This program generates a random number, extracts  last digit
+ * and prints whether it's greater than 5, equal to 0, or less than 6
+ * but not 0.
  *
  * Return: Always 0 (Success)
  */
