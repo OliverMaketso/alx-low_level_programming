@@ -10,16 +10,16 @@
  */
 int main(void)
 {
-    char digit = '0';
+char digit = '0';
 
-    while (digit <= '9')
-    {
-        putchar(digit);
-        digit++;
-    }
+while (digit <= '9')
+{
+putchar(digit);
+digit++;
+}
 
-    putchar('\n'); /* Print a newline character */
+putchar('\n'); /* Print a newline character */
 
-    return (0);
+return (0);
 }
 
