@@ -10,8 +10,12 @@
  */
 int main(void)
 {
-putchar('0');    /* Print the character '0' */
+int i = 0;
+while (i < 10)
+{
+putchar(i + '0');    /* Print the character '0' */
 putchar('\n');   /* Print a newline character */
-
+i++; 
+}
 return (0);
 }
