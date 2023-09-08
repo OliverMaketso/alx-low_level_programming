@@ -5,8 +5,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program generates a random number, extracts  last digit
- *and prints whether it's greater than 5, equal to 0, or less than 6
+ * Description: This program generates a random number, extracts the last digit,
+ *              and prints whether it's greater than 5, equal to 0, or less than 6
  *              but not 0.
  *
  * Return: Always 0 (Success)
@@ -22,7 +22,10 @@ n = rand() - RAND_MAX / 2;
 /* Extract the last digit and ensure its sign matches the original number */
 lastDigit = n % 10;
 if (lastDigit < 0)
+{
 lastDigit *= -1;
+n *= -1;  // Ensure that n is also negative if lastDigit is negative
+}
 
 printf("Last digit of %d is %d ", n, lastDigit);
 
