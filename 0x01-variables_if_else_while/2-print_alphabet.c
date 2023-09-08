@@ -18,7 +18,7 @@ putchar(letter);
 letter++;
 }
 
-putchar('\n'); // Print a newline character
+putchar('\n'); /* Print a newline character*/
 
 return (0);
 }
