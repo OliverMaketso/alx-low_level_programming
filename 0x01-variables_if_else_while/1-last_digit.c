@@ -21,26 +21,18 @@ n = rand() - RAND_MAX / 2;
 
 /* Extract the last digit and ensure its sign matches the original number */
 lastDigit = n % 10;
-if (lastDigit < 0)
-{
-lastDigit *= -1;
-n *= -1;  /* Ensure that n is also negative if lastDigit is negative*/
-}
-
-printf("Last digit of %d is %d ", n, lastDigit);
-
+printf("last digit of %d is %d", n, lastDigit);
 if (lastDigit > 5)
 {
 printf("and is greater than 5\n");
 }
-else if (lastDigit == 0)
+else if (lastDigit==0)
 {
 printf("and is 0\n");
 }
 else
 {
-printf("and is less than 6 and not 0\n");
+printf("and is less than 6and not 0\n");
 }
-
 return (0);
 }
