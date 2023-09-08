@@ -10,7 +10,8 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    lastDigit = abs(n % 10); // Extract the last digit using modulo and ensure it's positive
+    /* Extract the last digit using modulo and ensure it's positive */
+    lastDigit = abs(n % 10);
 
     printf("Last digit of %d is %d ", n, lastDigit);
 
@@ -29,4 +30,5 @@ int main(void)
 
     return (0);
 }
+
 
