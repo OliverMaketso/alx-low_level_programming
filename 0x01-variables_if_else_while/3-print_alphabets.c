@@ -10,25 +10,24 @@
  */
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
+char lowercase = 'a';
+char uppercase = 'A';
+/* Print lowercase alphabet */
+while (lowercase <= 'z')
+{
+putchar(lowercase);
+lowercase++;
+}
 
-    /* Print lowercase alphabet */
-    while (lowercase <= 'z')
-    {
-        putchar(lowercase);
-        lowercase++;
-    }
+/* Print uppercase alphabet */
+while (uppercase <= 'Z')
+{
+putchar(uppercase);
+uppercase++;
+}
 
-    /* Print uppercase alphabet */
-    while (uppercase <= 'Z')
-    {
-        putchar(uppercase);
-        uppercase++;
-    }
+putchar('\n'); /* Print a newline character */
 
-    putchar('\n'); /* Print a newline character */
-
-    return (0);
+return (0);
 }
 

@@ -10,9 +10,13 @@ ii#include <stdio.h>
  */
 int main(void)
 {
-putchar('0');    /* Print the character '0' */
-putchar('\n');   /* Print a newline character */
-
+int i = 0;
+while (i < 10)
+{
+putchar(i + '0');    /* Print the character '0' */
+i++; /*increment i by 1*/
+}
+putchar('\n');
+>>>>>>> d1a9e9953a5e0b7390864ff4e355786aa379b253
 return (0);
 }
-

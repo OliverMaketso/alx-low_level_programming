@@ -10,16 +10,16 @@
  */
 int main(void)
 {
-    char letter = 'z';
+char letter = 'z';
 
-    while (letter >= 'a')
-    {
-        putchar(letter);
-        letter--;
-    }
+while (letter >= 'a')
+{
+putchar(letter);
+letter--;
+}
 
-    putchar('\n'); /* Print a newline character */
+putchar('\n'); /* Print a newline character */
 
-    return (0);
+return (0);
 }
 
