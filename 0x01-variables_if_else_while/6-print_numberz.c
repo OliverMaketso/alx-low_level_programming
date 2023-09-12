@@ -1,25 +1,18 @@
-#include <stdio.h>
+ii#include <stdio.h>
 
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all single-digit numbers of base 10
- *              starting from 0, followed by a new line.
+ * Description: This program prints the single-digit number 0 in base 10,
+ *              followed by a new line, using the putchar function twice.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char digit = '0';
+putchar('0');    /* Print the character '0' */
+putchar('\n');   /* Print a newline character */
 
-    while (digit <= '9')
-    {
-        putchar(digit);
-        digit++;
-    }
-
-    putchar('\n'); /* Print a newline character */
-
-    return (0);
+return (0);
 }
 
