@@ -9,22 +9,10 @@
  */
 int _abs(int n)
 {
-char digit;
-int absValue = n;
-
-if (n < 0)
-{
-_putchar('-');
-absValue = -n;
-}
-
-while (absValue > 0)
-{
-digit = (absValue % 10) + '0';
-_putchar(digit);
-absValue /= 10;
-}
-
-return (n >= 0 ? n : -n);
+    if (n < 0)
+    {
+        return (-n);
+    }
+    return (n);
 }
 
