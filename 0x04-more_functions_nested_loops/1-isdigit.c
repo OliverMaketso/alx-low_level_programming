@@ -14,7 +14,7 @@ return 1; /* c is a digit */
 }
 else
 {
-return 0; /* c is not a digit */
+return (0); /* c is not a digit */
 }
 }
 
