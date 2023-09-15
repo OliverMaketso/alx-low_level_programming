@@ -15,7 +15,7 @@ return 0; /* Product of zero and any number is zero */
 }
 else
 {
-return a * b;
+return (a * b);
 }
 }
 
