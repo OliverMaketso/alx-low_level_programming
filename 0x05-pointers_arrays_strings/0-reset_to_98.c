@@ -10,10 +10,10 @@
  */
 void reset_to_98(int *n)
 {
-    /* Check if the pointer is not NULL to avoid dereferencing a NULL pointer */
-    if (n != NULL)
-    {
-        *n = 98; /* Update the value pointed to by n to 98 */
-    }
+	/* Check if the pointer is not NULL to avoid dereferencin NULL pointer */
+	if (n != NULL)
+	{
+	*n = 98; /* Update the value pointed to by n to 98 */
+	}
 }
 
