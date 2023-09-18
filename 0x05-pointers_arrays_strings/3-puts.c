@@ -16,10 +16,10 @@ if (str != NULL)
 {
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 
