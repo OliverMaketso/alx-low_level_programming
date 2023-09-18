@@ -9,7 +9,8 @@
  * Return: Always 0 (Success)
  */
 
-int main(void) {
+int main(void) 
+{
 int i;
 for (i = 1; i <= 100; i++) 
 {
@@ -40,7 +41,7 @@ printf("\n");
 }
 }
 
-return 0;
+return (0);
 }
 
 
