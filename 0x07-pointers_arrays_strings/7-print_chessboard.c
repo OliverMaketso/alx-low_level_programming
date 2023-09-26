@@ -12,9 +12,9 @@ for (row = 0; row < 8; row++)
 {
 for (col = 0; col < 8; col++)
 {
-putchar(a[row][col]);
+_putchar(a[row][col]);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 

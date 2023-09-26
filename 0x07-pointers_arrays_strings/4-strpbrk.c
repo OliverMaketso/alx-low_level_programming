@@ -6,22 +6,24 @@
  * @s: The string to be searched.
  * @accept: The set of bytes to search for.
  *
- * Return: A pointer to the byte in `s` that matches one of the bytes in `accept`,
+ * Return: A pointer to the byte in `s` that matches one of the bytes
  * or NULL if no such byte is found.
  */
 char *_strpbrk(char *s, char *accept)
 {
 char *accept_ptr;
 
-while (*s) {
+while (*s)
+{
 accept_ptr = accept;
-while (*accept_ptr) {
+while (*accept_ptr)
+{
 if (*s == *accept_ptr)
-return s;
+return (s);
 accept_ptr++;
 }
 s++;
 }
 
-return NULL;
+return (NULL);
 }

@@ -15,10 +15,13 @@ char *accept_ptr;
 unsigned int count = 0;
 int found = 0;
 
-for (; *s; s++) {
+for (; *s; s++)
+{
 found = 0;
-for (s_ptr = s, accept_ptr = accept; *accept_ptr; accept_ptr++) {
-if (*s_ptr == *accept_ptr) {
+for (s_ptr = s, accept_ptr = accept; *accept_ptr; accept_ptr++)
+{
+if (*s_ptr == *accept_ptr)
+{
 found = 1;
 break;
 }
@@ -29,5 +32,5 @@ else
 break;
 }
 
-return count;
+return (count);
 }
