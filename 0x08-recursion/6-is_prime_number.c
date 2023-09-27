@@ -1,42 +1,32 @@
 #include "main.h"
 
-/*
- * is_prime_number - Checks if a number is prime.
+/* is_prime_number - Checks if a number is prime.
  * n: The number to check.
  *
  * Return: 1 if n is prime, 0 otherwise.
  */
-int is_prime_number(int n)
+int is_prime_helper(int n, int divisor)
 {
-int i; /* Declare the loop counter here */
-
-/* Check if n is less than or equal to 1 */
 if (n <= 1)
 {
 return (0); /* 0 and 1 are not prime numbers */
 }
 
-/* Check if n is 2 or 3 */
-if (n <= 3)
+if (divisor == 1)
 {
-return (1); /* 2 and 3 are prime numbers */
+return (1); /* If divisor reaches 1, n is prime */
 }
 
-/* Check if n is divisible by 2 or 3 */
-if (n % 2 == 0 || n % 3 == 0)
+if (n % divisor == 0)
 {
-return (0); /* Numbers divisible by 2 or 3 are not prime */
+return (0); /* n is divisible by divisor, not prime */
 }
 
-/* Check for divisibility by numbers in the form 6k ± 1 */
-for (i = 5; i * i <= n; i += 6)
-{
-if (n % i == 0 || n % (i + 2) == 0)
-{
-return (0); /* Numbers divisible by i or i + 2 are not prime */
-}
+return is_prime_helper(n, divisor - 1); /* Check next divisor */
 }
 
-return (1); /* If no divisor found, n is prime */
+int is_prime_number(int n)
+{
+return is_prime_helper(n, n / 2); /* Start with the largest possible divisor */
 }
 
