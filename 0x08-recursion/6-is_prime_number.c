@@ -1,6 +1,7 @@
 #include "main.h"
 
-/* is_prime_number - Checks if a number is prime.
+/*
+ * is_prime_number - Checks if a number is prime.
  * n: The number to check.
  *
  * Return: 1 if n is prime, 0 otherwise.
@@ -22,11 +23,11 @@ if (n % divisor == 0)
 return (0); /* n is divisible by divisor, not prime */
 }
 
-return is_prime_helper(n, divisor - 1); /* Check next divisor */
+return (is_prime_helper(n, divisor - 1)); /* Check next divisor */
 }
 
 int is_prime_number(int n)
 {
-return is_prime_helper(n, n / 2); /* Start with the largest possible divisor */
+return (is_prime_helper(n, n / 2));
 }
 
